@@ -1,2 +1,2 @@
-# QtPhysicsSandbox
-A small physics sandbox using Qt and C++.
+# QtPhysicsSandbox (WIP)
+A small physics sandbox using Qt and C++. Will update soon.
