@@ -10,10 +10,9 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     scene = new QGraphicsScene(this);
+    scene->setItemIndexMethod(QGraphicsScene::NoIndex);
     ui->field->setScene(scene);
-    //scene.setItemIndexMethod(QGraphicsScene::NoIndex);
-
-    Ball *ball = new Ball();
+    Ball *ball = new Ball(30,30,Qt::red,20,0,false);
     scene->addItem(ball);
 
 

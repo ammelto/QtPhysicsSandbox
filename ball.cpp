@@ -3,30 +3,27 @@
 #include <QGraphicsScene>
 #include <QPainter>
 #include <QStyleOption>
+#include <QDebug>
 
 #include <math.h>
 
-Ball::Ball()
+Ball::Ball(qreal grams, qreal cm, QColor c, qreal pascals, qreal cof, bool mag)
+    :mass(grams), radius(cm), color(c), elasticity(pascals), friction(cof),
+     magnetic(mag)
 {
     setFlag(ItemIsMovable);
+    setCursor(Qt::OpenHandCursor);
 }
 
 QRectF Ball::boundingRect() const{
-    return QRectF(0, 0,
-                  100, 100);
+    return QRectF(radius +0.25 , radius + 0.25 ,
+                  radius *2 +0.5, radius *2 +0.5);
 }
 
 void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *){
     painter->setBrush(color);
-    painter->drawEllipse(0,0,10,10);
+    painter->drawEllipse(boundingRect());
 }
-
-QPainterPath Ball::shape() const {
-    QPainterPath path;
-    path.addRect(-10, -20, 20, 40);
-    return path;
-}
-
 
 Ball::~Ball()
 {
