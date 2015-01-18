@@ -6,14 +6,16 @@
 class Ball : public QGraphicsItem
 {
 public:
-    Ball(qreal grams, qreal cm, QColor c, qreal pascals, qreal cof, bool mag);
+    Ball();
 
+    void setProperties(int type);
     QRectF boundingRect() const Q_DECL_OVERRIDE;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) Q_DECL_OVERRIDE;
 
     ~Ball();
 private:
+    enum categories{plastic,rubber,ice};
     const qreal mass;
     const qreal elasticity;
     const qreal radius;

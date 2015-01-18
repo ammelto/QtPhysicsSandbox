@@ -5,6 +5,8 @@ logic::logic()
 
 }
 
+
+
 logic::~logic()
 {
 

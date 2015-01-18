@@ -7,9 +7,9 @@
 
 #include <math.h>
 
-Ball::Ball(qreal grams, qreal cm, QColor c, qreal pascals, qreal cof, bool mag)
-    :mass(grams), radius(cm), color(c), elasticity(pascals), friction(cof),
-     magnetic(mag)
+Ball::Ball()
+    :mass(0), radius(0), color(Qt::black), elasticity(0), friction(0),
+     magnetic(0)
 {
     setFlag(ItemIsMovable);
     setCursor(Qt::OpenHandCursor);
@@ -18,6 +18,10 @@ Ball::Ball(qreal grams, qreal cm, QColor c, qreal pascals, qreal cof, bool mag)
 QRectF Ball::boundingRect() const{
     return QRectF(radius +0.25 , radius + 0.25 ,
                   radius *2 +0.5, radius *2 +0.5);
+}
+
+void Ball::setProperties(int type){
+
 }
 
 void Ball::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *){
