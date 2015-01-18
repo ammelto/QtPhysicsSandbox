@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>900</width>
     <height>600</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>800</width>
+    <width>900</width>
     <height>600</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>800</width>
+    <width>900</width>
     <height>600</height>
    </size>
   </property>
@@ -32,7 +32,7 @@
       <x>5</x>
       <y>1</y>
       <width>600</width>
-      <height>500</height>
+      <height>540</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -44,17 +44,57 @@
     <property name="minimumSize">
      <size>
       <width>600</width>
-      <height>500</height>
+      <height>540</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
       <width>600</width>
-      <height>500</height>
+      <height>540</height>
      </size>
     </property>
     <property name="resizeAnchor">
      <enum>QGraphicsView::AnchorViewCenter</enum>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>200</y>
+      <width>131</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>200</y>
+      <width>131</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>480</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>0</y>
+      <width>271</width>
+      <height>191</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -63,7 +103,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>900</width>
      <height>21</height>
     </rect>
    </property>
