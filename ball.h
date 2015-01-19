@@ -6,7 +6,7 @@
 class Ball : public QGraphicsItem
 {
 public:
-    Ball();
+    Ball(int type);
 
     void setProperties(int type);
     QRectF boundingRect() const Q_DECL_OVERRIDE;
@@ -14,13 +14,18 @@ public:
                QWidget *widget) Q_DECL_OVERRIDE;
 
     ~Ball();
+protected:
+    void mousePressEvent(QGraphicsSceneMouseEvent *event);
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *);
+
 private:
     enum categories{plastic,rubber,ice};
-    const qreal mass;
-    const qreal elasticity;
-    const qreal radius;
-    const QColor color;
-    const qreal friction;
+    qreal mass;
+    qreal elasticity;
+    qreal radius;
+    QColor color;
+    qreal friction;
     bool magnetic;
 };
 

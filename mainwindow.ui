@@ -53,6 +53,12 @@
       <height>540</height>
      </size>
     </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="interactive">
+     <bool>true</bool>
+    </property>
     <property name="resizeAnchor">
      <enum>QGraphicsView::AnchorViewCenter</enum>
     </property>

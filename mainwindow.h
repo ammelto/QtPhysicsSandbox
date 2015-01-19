@@ -6,6 +6,8 @@
 #include <QtCore>
 #include <QHash>
 #include "ball.h"
+#include "fieldScene.h"
+#include "previewscene.h"
 
 
 namespace Ui {
@@ -20,27 +22,29 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+protected:
+
 private slots:
         void objectListHandler(const QModelIndex &index);
         void categoryListHandler(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;
-    QGraphicsScene *sceneField;
-    QGraphicsScene *scenePreview;
+    fieldScene *sceneField;
+    previewScene *scenePreview;
     QStringListModel *categoryModel;
     QStringListModel *iceObjectModel;
     QStringListModel *rubberObjectModel;
     QStringListModel *plasticObjectModel;
-
     int currentCat;
-    QHash<int, QGraphicsItem*> *currentMap;
-    enum categories{plastic,rubber,ice};
+    enum plastics{pBall, pBox, pTriangle};
+    enum rubber{rBall, rBox, rTriangle};
+    enum ice{iBall, iBox, iTriangle};
     QHash<int, QStringListModel*>categoryMap;
 
-    QHash<int, QGraphicsItem*> objectPlasticMap;
-    QHash<int, QGraphicsItem*> objectRubberMap;
-    QHash<int, QGraphicsItem*> objectIceMap;
+    void MainWindow::addPlasticItem(int item);
+    void MainWindow::addRubberItem(int item);
+    void MainWindow::addIceItem(int item);
 };
 
 #endif // MAINWINDOW_H

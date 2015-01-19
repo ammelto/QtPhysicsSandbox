@@ -15,10 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     logic.cpp \
-    ball.cpp
+    ball.cpp \
+    fieldscene.cpp \
+    previewscene.cpp
 
 HEADERS  += mainwindow.h \
     logic.h \
-    ball.h
+    ball.h \
+    fieldscene.h \
+    previewscene.h
 
 FORMS    += mainwindow.ui

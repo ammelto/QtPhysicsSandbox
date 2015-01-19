@@ -2,10 +2,8 @@
 
 logic::logic()
 {
-
+    currentCat = 0;
 }
-
-
 
 logic::~logic()
 {
