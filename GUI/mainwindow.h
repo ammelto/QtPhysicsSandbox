@@ -5,9 +5,9 @@
 #include <QtGUI>
 #include <QtCore>
 #include <QHash>
-#include "ball.h"
-#include "fieldScene.h"
-#include "previewscene.h"
+#include "..\Items\ball.h"
+#include "..\GUI\fieldScene.h"
+#include "..\GUI\previewscene.h"
 
 
 namespace Ui {

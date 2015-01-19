@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Items">
+        <file>Wood_Tex.jpg</file>
+    </qresource>
+</RCC>

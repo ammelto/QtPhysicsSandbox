@@ -1,6 +1,6 @@
 #include "ball.h"
-#include "logic.h"
-#include "mainwindow.h"
+#include "..\logic.h"
+#include "..\GUI\mainwindow.h"
 
 #include <QtWidgets>
 #include <QGraphicsScene>

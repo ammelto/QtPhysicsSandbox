@@ -13,16 +13,21 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
+    GUI\mainwindow.cpp \
     logic.cpp \
-    ball.cpp \
-    fieldscene.cpp \
-    previewscene.cpp
+    Items\ball.cpp \
+    GUI\fieldscene.cpp \
+    GUI\previewscene.cpp \
+    Items\ballreal.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += GUI\mainwindow.h \
     logic.h \
-    ball.h \
-    fieldscene.h \
-    previewscene.h
+    Items\ball.h \
+    GUI\fieldscene.h \
+    GUI\previewscene.h \
+    Items\ballreal.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    Resources\resources.qrc

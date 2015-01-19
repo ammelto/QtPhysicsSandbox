@@ -1,9 +1,9 @@
-#include "mainwindow.h"
+#include "..\GUI\mainwindow.h"
 #include "ui_mainwindow.h"
-#include "ball.h"
-#include "logic.h"
-#include "fieldscene.h"
-#include "previewscene.h"
+#include "..\Items\ball.h"
+#include "..\logic.h"
+#include "..\GUI\fieldscene.h"
+#include "..\GUI\previewscene.h"
 
 #include <QHash>
 #include <QDebug>

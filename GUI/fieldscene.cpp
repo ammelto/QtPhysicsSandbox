@@ -2,7 +2,7 @@
 #include <QtDebug>
 #include <QDrag>
 #include <QMimeData>
-#include "ball.h"
+#include "..\Items\ball.h"
 
 fieldScene::fieldScene()
 {
@@ -13,7 +13,6 @@ fieldScene::fieldScene()
 void fieldScene::dropEvent(QGraphicsSceneDragDropEvent *event){
     QByteArray byteArray = event->mimeData()->data("Ball");
     Ball *item = *reinterpret_cast<Ball**>(byteArray.data());
-    item->setFlag(QGraphicsItem::ItemIsMovable);
     addItem(item);
 
     qDebug() << "Drag Drop";
