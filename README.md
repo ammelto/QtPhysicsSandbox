@@ -1,5 +1,5 @@
-# QtPhysicsSandbox (WIP)
-A small physics sandbox using Qt and C++.
+# QtPhysicsSandbox
+A small physics sandbox using Qt and C++. (WIP)
 
 ## What's Been Done
 * The UI framework is finished and just needs polishing. An introductory guide will be posted on how to use it at a later date.
